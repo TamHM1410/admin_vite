@@ -37,12 +37,10 @@ const useExperts = () => {
         mutationFn: (body) => ExpertsService.createExpert(body),
         onMutate: () => {
           setFetching();
-        },
-        onError: () => {
-          setFetched();
-          toast.error("An error occurred");
+          toast.success("Create successfully");
           onClose();
         },
+
         onSuccess: () => {
           setFetched();
           invalidateQueries({
@@ -51,6 +49,11 @@ const useExperts = () => {
           toast.success("Create successfully");
           onClose();
         },
+        onError: () => {
+          setFetched();
+ 
+        },
+      
       });
     
       const updateExpertsMutation = useMutation({

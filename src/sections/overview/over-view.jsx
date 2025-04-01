@@ -7,15 +7,15 @@ export default function Overview() {
       <div className="grid auto-rows-min gap-4 md:grid-cols-3">
         <div className="p-4 bg-black shadow-md rounded-lg text-center">
           <h3 className="text-lg font-semibold text-white">Total Users</h3>
-          <p className="text-3xl font-bold  text-white">2323</p>
+          <p className="text-3xl font-bold  text-white">23</p>
         </div>{" "}
         <div className="p-4 bg-black shadow-md rounded-lg text-center">
           <h3 className="text-lg font-semibold text-white">Total services</h3>
-          <p className="text-3xl font-bold  text-white">2323</p>
+          <p className="text-3xl font-bold  text-white">2</p>
         </div>
         <div className="p-4 bg-black shadow-md rounded-lg text-center ">
           <h3 className="text-lg font-semibold text-white">Total income</h3>
-          <p className="text-3xl font-bold  text-white ">2323</p>
+          <p className="text-3xl font-bold  text-white ">2</p>
         </div>{" "}
       </div>
       <div className="grid auto-rows-min gap-4 md:grid-cols-3">
