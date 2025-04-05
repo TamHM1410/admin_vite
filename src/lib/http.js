@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const http = axios.create({
-  baseURL: "http://localhost:8080/",
+  baseURL: "https://admin.tamdeptrai.com/",
   timeout: 30000,
   headers: {
     "Content-Type": "application/json",
