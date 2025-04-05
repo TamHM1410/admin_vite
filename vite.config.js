@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
   server: {
-    host: '0.0.0.0',  // Lắng nghe trên tất cả các IP
+    host: '::',  // Lắng nghe trên tất cả các IP
     port: 5173         // Đảm bảo sử dụng cổng 5173
   }
 });
