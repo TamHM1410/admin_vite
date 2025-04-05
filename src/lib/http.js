@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const http = axios.create({
-  baseURL: "https://admin.tamdeptrai.com/",
+  baseURL: "http://34.142.180.62:8080/",
   timeout: 30000,
   headers: {
     "Content-Type": "application/json",
