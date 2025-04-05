@@ -11,4 +11,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'), // Alias @ trỏ tới thư mục src
     },
   },
+  server: {
+    host: '0.0.0.0',  // Lắng nghe trên tất cả các IP
+    port: 5173         // Đảm bảo sử dụng cổng 5173
+  }
 });
