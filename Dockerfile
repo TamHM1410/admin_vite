@@ -1,20 +1,20 @@
-# Sử dụng Node.js LTS làm base image
-FROM node:18-alpine
+# Sử dụng Node.js >= 20 để tương thích react-router-dom
+FROM node:20-alpine
 
-# Đặt thư mục làm việc trong container
+# Đặt thư mục làm việc
 WORKDIR /app
 
-# Copy package.json và package-lock.json vào container
+# Copy dependencies files trước để tận dụng layer cache
 COPY package.json package-lock.json ./
 
 # Cài đặt dependencies
 RUN npm install
 
-# Copy toàn bộ mã nguồn vào container
+# Copy toàn bộ mã nguồn
 COPY . .
 
-# Mở port 3001 để truy cập ứng dụng
+# Mở port đúng với Vite (5173)
 EXPOSE 5173
 
-# Chạy ứng dụng React với Vite trong chế độ phát triển
+# Khởi chạy ứng dụng với Vite
 CMD ["npm", "run", "dev"]
